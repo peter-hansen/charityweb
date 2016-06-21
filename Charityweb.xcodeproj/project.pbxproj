@@ -14,6 +14,9 @@
 		101BDF231A48FA2000ADE883 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101BDF221A48FA2000ADE883 /* Images.xcassets */; };
 		101BDF261A48FA2000ADE883 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 101BDF241A48FA2000ADE883 /* LaunchScreen.xib */; };
 		101BDF321A48FA2000ADE883 /* CharitywebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 101BDF311A48FA2000ADE883 /* CharitywebTests.m */; };
+		101BDF3C1A49CF3500ADE883 /* main-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 101BDF3B1A49CF3500ADE883 /* main-logo.png */; };
+		101BDF401A4A328F00ADE883 /* paymentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101BDF3F1A4A328F00ADE883 /* paymentController.m */; };
+		73E14E76CB691B5BEEE1F282 /* libPods-Charityweb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B73DCE1B21271BEFD2D9F676 /* libPods-Charityweb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 		101BDF2B1A48FA2000ADE883 /* CharitywebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharitywebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		101BDF301A48FA2000ADE883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		101BDF311A48FA2000ADE883 /* CharitywebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharitywebTests.m; sourceTree = "<group>"; };
+		101BDF3B1A49CF3500ADE883 /* main-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "main-logo.png"; path = "../../../Downloads/main-logo.png"; sourceTree = "<group>"; };
+		101BDF3D1A49D51100ADE883 /* Charityweb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Charityweb.entitlements; sourceTree = "<group>"; };
+		101BDF3E1A4A328F00ADE883 /* paymentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paymentController.h; sourceTree = "<group>"; };
+		101BDF3F1A4A328F00ADE883 /* paymentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = paymentController.m; sourceTree = "<group>"; };
+		24D75833EEAE1F475D854BEE /* Pods-Charityweb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charityweb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charityweb/Pods-Charityweb.debug.xcconfig"; sourceTree = "<group>"; };
+		38EA3A869D267264CCB856FD /* Pods-Charityweb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charityweb.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charityweb/Pods-Charityweb.release.xcconfig"; sourceTree = "<group>"; };
+		B73DCE1B21271BEFD2D9F676 /* libPods-Charityweb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Charityweb.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E14E76CB691B5BEEE1F282 /* libPods-Charityweb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,8 @@
 				101BDF141A48FA2000ADE883 /* Charityweb */,
 				101BDF2E1A48FA2000ADE883 /* CharitywebTests */,
 				101BDF131A48FA2000ADE883 /* Products */,
+				8F61431A10E744688B989434 /* Pods */,
+				2D277D63D33BB93F334936B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +94,14 @@
 		101BDF141A48FA2000ADE883 /* Charityweb */ = {
 			isa = PBXGroup;
 			children = (
+				101BDF3D1A49D51100ADE883 /* Charityweb.entitlements */,
 				101BDF191A48FA2000ADE883 /* AppDelegate.h */,
 				101BDF1A1A48FA2000ADE883 /* AppDelegate.m */,
 				101BDF1C1A48FA2000ADE883 /* ViewController.h */,
 				101BDF1D1A48FA2000ADE883 /* ViewController.m */,
 				101BDF1F1A48FA2000ADE883 /* Main.storyboard */,
+				101BDF3E1A4A328F00ADE883 /* paymentController.h */,
+				101BDF3F1A4A328F00ADE883 /* paymentController.m */,
 				101BDF221A48FA2000ADE883 /* Images.xcassets */,
 				101BDF241A48FA2000ADE883 /* LaunchScreen.xib */,
 				101BDF151A48FA2000ADE883 /* Supporting Files */,
@@ -114,9 +130,27 @@
 		101BDF2F1A48FA2000ADE883 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				101BDF3B1A49CF3500ADE883 /* main-logo.png */,
 				101BDF301A48FA2000ADE883 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D277D63D33BB93F334936B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73DCE1B21271BEFD2D9F676 /* libPods-Charityweb.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F61431A10E744688B989434 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24D75833EEAE1F475D854BEE /* Pods-Charityweb.debug.xcconfig */,
+				38EA3A869D267264CCB856FD /* Pods-Charityweb.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 101BDF351A48FA2000ADE883 /* Build configuration list for PBXNativeTarget "Charityweb" */;
 			buildPhases = (
+				B74277D30E157CA1721AB326 /* Check Pods Manifest.lock */,
 				101BDF0E1A48FA2000ADE883 /* Sources */,
 				101BDF0F1A48FA2000ADE883 /* Frameworks */,
 				101BDF101A48FA2000ADE883 /* Resources */,
+				507505B45A0C44D46EF9B5C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +204,12 @@
 				TargetAttributes = {
 					101BDF111A48FA2000ADE883 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = AM5X9GKJ9X;
+						SystemCapabilities = {
+							com.apple.OMC = {
+								enabled = 1;
+							};
+						};
 					};
 					101BDF2A1A48FA2000ADE883 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -202,6 +244,7 @@
 				101BDF211A48FA2000ADE883 /* Main.storyboard in Resources */,
 				101BDF261A48FA2000ADE883 /* LaunchScreen.xib in Resources */,
 				101BDF231A48FA2000ADE883 /* Images.xcassets in Resources */,
+				101BDF3C1A49CF3500ADE883 /* main-logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,11 +257,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		507505B45A0C44D46EF9B5C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Charityweb/Pods-Charityweb-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B74277D30E157CA1721AB326 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		101BDF0E1A48FA2000ADE883 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101BDF401A4A328F00ADE883 /* paymentController.m in Sources */,
 				101BDF1E1A48FA2000ADE883 /* ViewController.m in Sources */,
 				101BDF1B1A48FA2000ADE883 /* AppDelegate.m in Sources */,
 				101BDF181A48FA2000ADE883 /* main.m in Sources */,
@@ -343,21 +420,41 @@
 		};
 		101BDF361A48FA2000ADE883 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D75833EEAE1F475D854BEE /* Pods-Charityweb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Charityweb/Charityweb.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					STRIPE_ENABLE_APPLEPAY,
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = Charityweb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		101BDF371A48FA2000ADE883 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EA3A869D267264CCB856FD /* Pods-Charityweb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Charityweb/Charityweb.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					STRIPE_ENABLE_APPLEPAY,
+					"$(inherited)",
+					"COCOAPODS=1",
+				);
 				INFOPLIST_FILE = Charityweb/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +511,7 @@
 				101BDF371A48FA2000ADE883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		101BDF381A48FA2000ADE883 /* Build configuration list for PBXNativeTarget "CharitywebTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +520,7 @@
 				101BDF3A1A48FA2000ADE883 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

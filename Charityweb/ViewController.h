@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController {
+    NSMutableData *_responseData;
+}
+@property (strong, nonatomic) NSDictionary *json;
+@property (strong, nonatomic) NSString *cwsid;
 @end
 
